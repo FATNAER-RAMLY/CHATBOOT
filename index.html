@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Chatbot</h1>
+        <div id="chat-history">
+            <!-- L'historique du chat sera affiché ici -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Posez votre question...">
+            <button id="send-btn">Envoyer</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
